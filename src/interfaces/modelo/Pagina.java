@@ -1,14 +1,17 @@
 package interfaces.modelo;
 
-public class Pagina extends Hoja {
+public class Pagina extends Hoja implements Imprimible {
 
 	public Pagina(String contenido) {
 		super(contenido);
 	}
 
 	@Override
-	public String imprirmir() {
-		return null;
+	public String imprimir() {
+	
+		return this.contenido;
 	}
+
+	
 
 }
